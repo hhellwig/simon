@@ -1,8 +1,8 @@
 const btnDescriptions = [
-    { file: 'sound1.mp3', hue: 120 },
-    { file: 'sound2.mp3', hue: 0 },
+    { file: 'sound1.mp3', hue: 100 },
+    { file: 'sound2.mp3', hue: -30 },
     { file: 'sound3.mp3', hue: 60 },
-    { file: 'sound4.mp3', hue: 240 },
+    { file: 'sound4.mp3', hue: 190 },
 ];
 
 class Button {
@@ -14,7 +14,7 @@ class Button {
     }
 
     paint(level) {
-        const background = `hsl(${this.hue}, 100% ${level}%)`;
+        const background = `hsl(${this.hue}, 100%, ${level}%)`;
         this.el.style.backgroundColor = background;
     }
 
@@ -95,10 +95,10 @@ class Game {
     }
 
     async playSequence() {
-        await DelayNode(500);
+        await delay(500);
         for (const btn of this.sequence) {
             await btn.press(1.0);
-            await DelayNode(100);
+            await delay(100);
         }
     }
 
