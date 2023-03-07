@@ -6,6 +6,7 @@
         <title>My Simon</title>
         <link rel="icon" href="favicon.ico" />
 
+        <script src="login.js"></script>
         <link rel="stylesheet" href="main.css" />
 
         <link
@@ -40,11 +41,10 @@
             <div>
                 <h1>Welcome</h1>
                 <p>Login to play</p>
-                <form method="get" action="play.html">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter name here" />
-                    <button type="submit" class="btn btn-success">Login</button>
-                </form>
+                <div>
+                    <input type="text" id="name" placeholder="Enter name" />
+                    <button class="btn btn-success" onclick="login()">Login</button>
+                </div>
             </div>
         </main>
 
