@@ -1,0 +1,23 @@
+{
+  "name": "simon",
+  "version": "1.0.0",
+  "description": "Welcome to my Simon Project! There's not much now, but soon this page will be buzzing with updates!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhellwig/simon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hhellwig/simon/issues"
+  },
+  "homepage": "https://github.com/hhellwig/simon#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
